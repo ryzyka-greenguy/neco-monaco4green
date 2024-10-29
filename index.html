@@ -77,12 +77,12 @@
 
 	function undo() {
 		console.log("Undo triggered");
-            editor.trigger('keyboard', 'undo');
+            editor.getModel().undo();
         }
 
         function redo() {
 		console.log("Redo triggered");
-            editor.trigger('keyboard', 'redo');
+            editor.getModel().redo();
         }
 	    
         // Function to set the value in the editor
