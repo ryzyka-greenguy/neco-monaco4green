@@ -75,6 +75,14 @@
             return editor.getValue();
         }
 
+	function undo() {
+            editor.trigger('keyboard', 'undo');
+        }
+
+        function redo() {
+            editor.trigger('keyboard', 'redo');
+        }
+	    
         // Function to set the value in the editor
         function setEditorValue(value) {
             editor.setValue(value);
