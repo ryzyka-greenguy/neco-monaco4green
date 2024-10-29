@@ -76,10 +76,12 @@
         }
 
 	function undo() {
+		console.log("Undo triggered");
             editor.trigger('keyboard', 'undo');
         }
 
         function redo() {
+		console.log("Redo triggered");
             editor.trigger('keyboard', 'redo');
         }
 	    
