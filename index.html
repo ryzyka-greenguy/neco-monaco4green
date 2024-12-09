@@ -38,7 +38,7 @@
                     { token: 'keyword', foreground: '#D1606C' },
                 ],
                 colors: {
-                    'editor.background': '#303030',
+                    'editor.background': '#28292a',
                     'editor.foreground': '#FFFFFF',
                     'editor.lineHighlightBackground': '#333333',
                     'editorCursor.foreground': '#FFFFFF'
@@ -65,8 +65,11 @@
             window.editor = monaco.editor.create(document.getElementById('editor'), {
                 value: 'print("Hello Neco-Ware V2!")',
                 language: 'lua',
+		smoothScrolling: true,
+    		fontLigatures: true,
                 theme: 'my-dark-theme',
-                minimap: { enabled: true }
+                minimap: { enabled: true },
+		scrollBeyondLastLine: true
             });
         });
 
